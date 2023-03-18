@@ -10,7 +10,7 @@ import {
 
 const deviceWidth = Dimensions.get('window').width;
 
-function Home() {
+const Home = () => {
   const [notes, setNotes] = useState([]);
   const [note, setNote] = useState();
 
@@ -63,7 +63,7 @@ function Home() {
       )}
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   heading: {
